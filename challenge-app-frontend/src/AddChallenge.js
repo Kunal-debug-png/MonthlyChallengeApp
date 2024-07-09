@@ -18,7 +18,11 @@ function AddChallenge({ onChallengeAdded }) {
     };
 
     return (
-        <div>
+        <div className="card my-5">
+            <div className="card-header">
+                Add new challenge
+            </div>
+            <div className="card-body">
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="challengeMonth">Month</label>
@@ -30,6 +34,7 @@ function AddChallenge({ onChallengeAdded }) {
                 </div>
                 <button type="submit">Submit</button>
             </form>
+            </div>
         </div>
     );
 }
